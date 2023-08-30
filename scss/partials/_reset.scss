@@ -1,0 +1,13 @@
+@use './variables.scss' as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: $colors60;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
