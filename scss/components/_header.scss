@@ -6,12 +6,16 @@
     position: fixed;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav-container--list {
-    
     .nav__list--item {
         font-size: 2rem;
         font-style: italic;
-        color: rgb(65, 65, 61);
+        color: whitesmoke;
         display: inline-block;
         height: 55px; width: 100px;
         text-align: center;
@@ -19,8 +23,9 @@
         text-decoration: none;
     }
     #logo {
-        li {
-            color: whitesmoke;
-        }
+        margin-right: 0.5rem;
+        font-size: 4rem;
+        text-decoration: none;
+        color: whitesmoke;
     }
 }
