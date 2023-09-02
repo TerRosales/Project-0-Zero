@@ -1,0 +1,34 @@
+@use '../partials/variables' as *;
+// Header and Footer Set Up
+#main {
+    min-height: 100%
+}
+
+
+.introduction {
+    display: flex;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+// Set Up ends 
+
+
+
+#main {
+    display: flex;
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#intro--section {
+    display: grid;
+    padding: 0 auto;
+    margin-top: 20rem;
+    top: 50%;
+    left: 35%;
+    width: 30rem;
+    border: 5px solid $colors10;
+    color: $colors10;
+}
