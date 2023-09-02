@@ -1,4 +1,6 @@
 @use '../partials/variables' as *;
+
+
 // Header and Footer Set Up
 #main {
     min-height: 100%
@@ -6,13 +8,17 @@
 
 
 .introduction {
+    padding-left: 12%;
+    background-image: url('assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     overflow: auto;
-    padding-bottom: 50px;
+    flex-direction: column;
 }
 // Set Up ends 
 
-
+// Main Body
 
 #main {
     display: flex;
@@ -21,14 +27,50 @@
     background-position: center;
     background-size: contain;
 }
-
+// Intro
 #intro--section {
-    display: grid;
+    z-index: 1;
+    animation: slide-in-blurred-left;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background: whitesmoke;
+    filter: grayscale(50%);
+    opacity: 0.9;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     padding: 0 auto;
-    margin-top: 20rem;
-    top: 50%;
-    left: 35%;
-    width: 30rem;
+    margin-top: 10rem;
+    margin-left: 15%;
+    width: 60%;
     border: 5px solid $colors10;
-    color: $colors10;
+    color: black;
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+// The What Section w/ video
+.the-what--container {
+    animation: slide-in-blurred-left;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    width: 60%;
+    background: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 15%;
+    h3 {
+        background: #000000;
+        background: linear-gradient(to right, #000000 22%, #FFFF00 39%, #000000 77%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+    }
 }

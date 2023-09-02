@@ -7,7 +7,7 @@
         list-style-type: none;
     }
     a {
-        color: black;
+        color: $colors60;
         text-decoration: none;
     }
     
@@ -26,5 +26,6 @@
 
 
 .email-listing {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
+    color: $colors60;
 }
