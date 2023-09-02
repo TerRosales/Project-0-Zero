@@ -99,7 +99,6 @@
   padding-left: 12%;
   background-image: url("assets/bg.png");
   background-size: contain;
-  background-repeat: no-repeat;
   display: flex;
   overflow: auto;
   flex-direction: column;
@@ -128,8 +127,9 @@
   display: flex;
   flex-direction: column;
   padding: 0 auto;
-  margin-top: 10rem;
+  margin-top: 13rem;
   margin-left: 15%;
+  height: 35rem;
   width: 60%;
   border: 5px solid #ffff00;
   color: black;
@@ -154,9 +154,7 @@
 }
 .the-what--container h3 {
   background: #000000;
-  background: linear-gradient(to right, #000000 22%, #FFFF00 39%, #000000 77%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #000000 22%, #FFFF00 25%, #000000 77%);
   font-size: 2rem;
 }
 
@@ -202,7 +200,7 @@
     padding-left: 1.5rem;
     width: 80%;
     margin-left: 5%;
-    margin-top: 13rem;
+    margin-top: 8rem;
   }
 }
 @media (max-width: 375px) {
