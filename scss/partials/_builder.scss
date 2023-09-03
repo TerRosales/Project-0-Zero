@@ -1,0 +1,29 @@
+@use '../partials/variables' as *;
+
+.zero-introduction {
+    margin-top: 10%;
+    position: relative;
+    padding-left: 12%;
+    background-image: url('assets/bg.png');
+    background-size: contain;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.zero--intro {
+    text-align: center;
+    animation: text-shadow-pop-left;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-left: 15%;
+    width: 60%;
+}
+#zero-h1 {
+    font-size: 5rem;
+    color: $colors60; 
+    background: 
+    -webkit-linear-gradient(0deg, #020202 17%, #ffff00 47%, #020202 98%);
+}
