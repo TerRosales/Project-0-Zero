@@ -8,6 +8,12 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
+    .zero-introduction {
+        .zero--intro {
+            margin-top: 20%;
+            margin-left: 15%;
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -44,7 +50,12 @@
     .nav__list--item {
         margin-left: 3rem;
         margin-right: 0.1rem;
-        margin-top: 13rem;
-    }    
+    }
+    .zero-introduction {
+        .zero--intro {
+            margin-left: 25%;
+        }
+    }
+
 }
 

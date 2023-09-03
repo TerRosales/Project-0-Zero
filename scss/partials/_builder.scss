@@ -1,7 +1,7 @@
 @use '../partials/variables' as *;
 
 .zero-introduction {
-    margin-top: 10%;
+    margin-top: 20%;
     position: relative;
     padding-left: 12%;
     background-image: url('assets/bg.png');
@@ -22,8 +22,6 @@
     width: 60%;
 }
 #zero-h1 {
-    font-size: 5rem;
-    color: $colors60; 
-    background: 
-    -webkit-linear-gradient(0deg, #020202 17%, #ffff00 47%, #020202 98%);
+    font-size: 3.5rem;
+    color: $colors60;
 }

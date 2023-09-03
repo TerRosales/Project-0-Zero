@@ -231,6 +231,10 @@
     padding-right: 2rem;
     padding-left: 2rem;
   }
+  .zero-introduction .zero--intro {
+    margin-top: 20%;
+    margin-left: 15%;
+  }
 }
 @media (max-width: 426px) {
   #intro--section {
@@ -265,11 +269,13 @@
   .nav__list--item {
     margin-left: 3rem;
     margin-right: 0.1rem;
-    margin-top: 13rem;
+  }
+  .zero-introduction .zero--intro {
+    margin-left: 25%;
   }
 }
 .zero-introduction {
-  margin-top: 10%;
+  margin-top: 20%;
   position: relative;
   padding-left: 12%;
   background-image: url("assets/bg.png");
@@ -291,9 +297,8 @@
 }
 
 #zero-h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: snow;
-  background: -webkit-linear-gradient(0deg, #020202 17%, #ffff00 47%, #020202 98%);
 }
 
 *, *::before, *::after {
