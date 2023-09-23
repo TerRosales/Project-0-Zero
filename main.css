@@ -124,6 +124,7 @@
   opacity: 0.9;
   padding-right: 6rem;
   padding-left: 6rem;
+  line-height: 2;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -174,14 +175,15 @@
   margin-left: 15%;
   width: 60%;
   height: 60vh;
-  background-image: linear-gradient(to top, #d8d808, #bcbe28, #a2a335, #888a3c, #707140, #635e3b, #544c36, #423c32, #352d28, #26201e, #171313, #000000);
+  background: rgba(7, 7, 7, 0.9);
 }
 .the-what--details h4 {
-  color: #020202;
-  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2rem;
+  font-weight: 100;
 }
 .the-what--details p {
-  color: #020202;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .the-what--list {
@@ -189,13 +191,16 @@
   line-height: 1.5;
   transform: translate(-20px, 0px);
 }
+.the-what--list li {
+  margin-bottom: 0.7rem;
+}
 
 #colorizer--one {
   box-shadow: inset 0 0 0 0 white;
-  color: #020202;
+  color: rgba(255, 255, 10, 0.7);
   padding: 0 0.25rem;
   margin: 0 -0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 #colorizer--one:hover {
