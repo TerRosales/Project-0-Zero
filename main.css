@@ -624,7 +624,7 @@ button {
   padding: 0.8rem;
   border-radius: 0.8rem;
   color: rgba(20, 20, 20, 0.9);
-  width: 30rem;
+  width: 45rem;
   height: auto;
   min-height: 10rem;
   background-color: var(--colors10-dim);
@@ -655,6 +655,15 @@ button {
   }
 }
 @media (max-width: 1024px) {
+  .addedDetails {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    color: rgba(20, 20, 20, 0.9);
+    width: 31rem;
+    height: auto;
+    min-height: 10rem;
+    background-color: var(--colors10-dim);
+  }
   .deleteAllButton {
     margin-left: 14rem;
   }
@@ -717,6 +726,15 @@ button {
     margin-left: 2%;
     width: 24.6rem;
   }
+  .addedDetails {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    color: rgba(20, 20, 20, 0.9);
+    width: 18.5rem;
+    height: auto;
+    min-height: 10rem;
+    background-color: var(--colors10-dim);
+  }
 }
 @media (max-width: 550px) {
   .container {
@@ -770,6 +788,15 @@ button {
   }
 }
 @media (max-width: 425px) {
+  .addedDetails {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    color: rgba(20, 20, 20, 0.9);
+    width: 15rem !important;
+    height: auto;
+    min-height: 10rem;
+    background-color: var(--colors10-dim);
+  }
   .container {
     display: flex;
     flex-direction: column;
