@@ -359,6 +359,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--colors30);
+  overflow-x: hidden;
 }
 
 .container {
@@ -633,10 +634,11 @@ button {
     margin-left: 1.2%;
   }
   .reciever-main {
+    position: sticky;
     width: 51rem;
   }
   .deleteAllButton {
-    margin-left: 13.5rem;
+    margin-left: 21rem;
   }
 }
 @media (max-width: 1024px) {
@@ -658,6 +660,7 @@ button {
     width: 22rem;
   }
   .reciever-main {
+    position: sticky;
     margin-top: 16.1%;
     margin-left: 2%;
     width: 37rem;
@@ -670,7 +673,7 @@ button {
 }
 @media (max-width: 768px) {
   .deleteAllButton {
-    margin-left: 8.7rem;
+    margin-left: 8rem;
   }
   .colorizer {
     margin-left: 4%;
