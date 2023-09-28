@@ -626,14 +626,26 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
+  .colorizer {
+    margin-left: 3%;
+  }
+  .control-main {
+    margin-left: 1.2%;
+  }
+  .reciever-main {
+    width: 51rem;
+  }
+  .deleteAllButton {
+    margin-left: 13.5rem;
+  }
 }
 @media (max-width: 1024px) {
   .deleteAllButton {
-    margin-left: 9rem;
+    margin-left: 14rem;
   }
   .colorizer {
     margin-left: 7%;
-    margin-top: 9%;
+    margin-top: 39%;
     width: 22rem;
     height: 25rem;
   }
@@ -646,8 +658,9 @@ button {
     width: 22rem;
   }
   .reciever-main {
+    margin-top: 16.1%;
     margin-left: 2%;
-    width: 25rem;
+    width: 37rem;
   }
   .container {
     display: grid;
@@ -660,8 +673,8 @@ button {
     margin-left: 8.7rem;
   }
   .colorizer {
-    margin-left: 5%;
-    margin-top: 61%;
+    margin-left: 4%;
+    margin-top: 51%;
     width: 20rem;
     height: 25rem;
   }
@@ -675,7 +688,7 @@ button {
     height: 14rem;
   }
   .control-main {
-    margin-left: 2.3%;
+    margin-left: 1.5%;
     margin-bottom: 0.1rem;
     width: 20rem;
     padding: 0.7rem;
@@ -684,7 +697,8 @@ button {
     margin-top: 0rem;
   }
   .reciever-main {
-    margin-left: 4%;
+    margin-top: 24.5%;
+    margin-left: 2%;
     width: 24.6rem;
   }
 }
