@@ -25,3 +25,365 @@
     font-size: 3.5rem;
     color: $colors60;
 }
+
+
+:root {
+    --colors60: rgba(255, 255, 255, 1);
+    --colors60-dim: rgba(255, 255, 255, 0.9);
+    --colors30-dim: rgba(5, 5, 5, 0.9);
+    --colors30: black;
+    --colors10: rgba(255, 250, 0, 0.9);
+    --colors10-dim: rgba(255, 250, 0, 0.5);
+    --colors-dim: rgba(100, 100, 100, 0.3);
+}
+
+i{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
+i {
+    left: 5%;
+    transition: all 0.2 ease-in-out;
+    color: var(--colors60-dim);
+}
+i:hover {
+    color: var(--colors60);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--colors30);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "colors reciever"
+    "control control";
+    background-color: var(--colors30);
+}
+
+/* areas */
+.colorizer {
+    grid-area: colors;
+}
+.control-main {
+    grid-area: control;
+}
+.reciever-main {
+    grid-area: reciever;
+}
+
+
+
+#colorizerID {
+    position: absolute;
+
+}
+
+.colorizer {
+    border-radius: 0.8rem;
+    margin: 1rem;
+    margin-top: 13rem;
+    margin-left: 20rem;
+    background-color: var(--colors-dim);
+    display: flex;
+    height: 25rem; width: 35rem;
+    padding: 0.8rem;
+    justify-content: center;
+    border: 0.1rem outset var(--colors30);
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem outset var(--colors30);
+    border-radius: 0.8rem;
+    width: 10rem; min-width: 4rem;
+    height: 12rem;
+    margin-top: 7rem;
+    padding: 1rem;
+}
+
+#color-box-2 {
+    margin-left: 0.8rem;
+}
+
+#color-box-3 {
+    margin-left: 0.8rem;
+}
+
+.hexInput {
+    background-color: black;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    margin-top: 0.8rem;
+    max-width: 7rem; width: 6rem; min-width: 4rem;
+}
+
+.toggleLockButton, .randomizeButton {
+    margin-top: 1.5rem;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60-dim);
+    background-color: var(--colors30);
+}
+
+.randomizeAll {
+    margin-top: 3.6rem;
+    position: absolute;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
+}
+
+button {
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60-dim);
+    background-color: var(--colors30);
+}
+
+.deleteAllButton {
+    margin-left: 20rem;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60-dim);
+    background-color: var(--colors30);
+    margin-bottom: 1.5rem;
+}
+
+.toggleLockButton:hover, .randomizeButton:hover, .randomizeAll:hover, .groupAdd:hover {
+    height: 2.4rem; width: 3.6rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
+}
+
+.groupAdd {
+    margin-left: 14rem;
+    margin-bottom: 1.5rem;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
+}
+
+.control-main {
+    transform: translateY(-15.5rem);
+    margin: 1rem;
+    margin-left: 20rem;
+    background-color: var(--colors-dim);
+    height: 43rem; width: 35rem;
+    padding: 2rem;
+    justify-content: center;
+    border: 0.1rem outset var(--colors30);
+    border-radius: 0.8rem;
+}
+
+.control-panel {
+    display: grid;
+}
+
+.rules{
+    border-radius: 0.8rem;
+    background-color: var(--colors10-dim);
+}
+
+.colorizerTitle {
+    text-align: center;
+    color: var(--colors10);
+}
+
+.mainTitle, .recieverTitle {
+    text-align: center;
+    color: var(--colors10);
+    border: 0.1rem outset var(--colors30);
+}
+
+.addedTitle {
+    text-align: center;
+    color: var(--colors10);
+}
+
+.rulesTitle {
+    text-align: center;
+    color: var(--colors30);
+}
+
+.rules-text{
+    padding: 1rem;
+    width: auto; height: 10rem;
+    color: rgba(20, 20, 20, 0.9);
+    border-radius: 0.8rem;
+}
+
+.mainTitle, .recieverTitle {
+    margin-top: 0;
+}
+
+.titleArea {
+    margin-bottom: 1.5rem;
+}
+
+.textArea {
+    height: 12rem;
+    margin-bottom: 1.5rem;
+}
+
+.reciever-main {
+    /* margin-bottom: 20rem; */
+    position: sticky;
+    top: 2rem;
+    margin: 1rem;
+    margin-top: 12.9rem;
+    margin-right: 19rem;
+    padding: 2rem;
+    background-color: var(--colors-dim);
+    height: 41rem; width: 51rem;
+    /* padding: 2rem; */
+    justify-content: center;
+    border: 0.1rem outset var(--colors30);
+    border-radius: 0.8rem;
+    overflow-y: scroll;
+}
+.reciever-main::-webkit-scrollbar{
+    width: 10px;
+    transition: all 0.5s ease-in;
+}
+
+      /* Track */
+.reciever-main::-webkit-scrollbar-track {
+    transition: all 0.5s ease-in;
+    background: var(--colors30-dim); 
+}
+
+      /* Handle */
+.reciever-main::-webkit-scrollbar-thumb {
+    transition: all 0.5s ease-in;
+    background: #888; 
+}
+
+      /* Handle on hover */
+.reciever-main::-webkit-scrollbar-thumb:hover {
+    transition: all 0.5s ease-in;
+    background: var(--colors10); 
+}
+
+
+.reciever-panel {
+    padding: 1rem;
+    width: auto; height: 10rem;
+    border-radius: 0.8rem;
+}
+
+.addedHeader {
+
+}
+
+.addedDetails {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    color: rgba(20, 20, 20, 0.9);
+    width: 30rem;
+    height: auto; min-height: 10rem;
+    background-color: var(--colors10-dim);
+}
+
+.addedTimeDate {
+    color: forestgreen;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .deleteAllButton {
+        margin-left: 9rem;
+    }
+    .colorizer {
+        margin-left: 7%;
+        margin-top: 9%;
+        width: 22rem;
+        height: 25rem;
+    }
+    .color-box {
+        width: 9rem;
+        height: 14rem;
+    }
+    .control-main {
+        margin-bottom: 3%;
+        width: 22rem;
+    }
+    .reciever-main {
+        margin-left: 2%;
+        width: 25rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .deleteAllButton {
+        margin-left: 8.7rem;
+    }
+
+    .colorizer {
+        margin-left: 5%;
+        margin-top: 9%;
+        width: 20rem;
+        height: 25rem;
+    }
+    .hexInput {
+        font-size: 0.85rem;
+        font-weight: 500;
+        width: 4rem;
+    }
+    .color-box {
+        width: 9rem;
+        height: 14rem;
+    }
+    .control-main {
+        margin-left: 2.3%;
+        margin-bottom: 0.1rem;
+        width: 20rem;
+        padding: 0.7rem;
+    }
+    #colorizerID {
+        margin-top: 0rem;
+    }
+    .reciever-main {
+        margin-left: 1%;
+        width: 24.6rem;
+    }
+}
+
+@media (max-width: 550px) {
+
+}

@@ -3,3 +3,13 @@ $colors30: rgba(7, 7, 7, 0.9);
 $colors60: snow;
 $colors60-dim: rgba(255, 255, 255, 0.8);
 $colors10-dim: rgba(255, 255, 10, 0.7);
+
+:root {
+    --colors60: rgba(255, 255, 255, 1);
+    --colors60-dim: rgba(255, 255, 255, 0.9);
+    --colors30-dim: rgba(5, 5, 5, 0.9);
+    --colors30: black;
+    --colors10: rgba(255, 250, 0, 0.9);
+    --colors10-dim: rgba(255, 250, 0, 0.5);
+    --colors-dim: rgba(100, 100, 100, 0.3);
+}

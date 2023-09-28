@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+
     <title>Zero</title>
 </head>
 <body>
@@ -28,12 +30,73 @@
 <!-- Header Ending -->
 <!-- Main Content -->
 <main id="main">
-<!-- Intro Div -->
-            <div class="zero-introduction">
-                <div class="zero--intro">
-                    <h1 id="zero-h1">Welcome to Zer0</h1>
+<!-- Main Container -->
+<div id="container" class="container">
+    <!-- Color Randomizer -->
+        <div class="colorizer" id="colorizer">
+            <button class="randomizeAll" id="randomizeAll" type="button">
+                <i class="fa-solid fa-code-branch fa-xl"></i>
+            </button>
+            <h2 id="colorizerID" class="colorizerTitle">Colorizer</h2>
+            <div class="color-box" id="color-box">
+                <input class="hexInput" type="text" id="hex-code" readonly>
+                <button class="toggleLockButton" onclick="toggleLock()">
+                    Unlock / Lock
+                </button>
+                <button class="randomizeButton" onclick="randomizeColor()">
+                    <i class="fa-solid fa-shuffle fa-xl"></i>
+                </button>
+            </div>
+            <!--Color Box 1 Ends  -->
+            <div class="color-box" id="color-box-2">
+                <input class="hexInput" type="text" id="hex-code-2" readonly>
+                <button class="toggleLockButton"  id="lockButton2" onclick="toggleLock2()">
+                    Unlock / Lock
+                </button>
+                <button class="randomizeButton" onclick="randomizeColor2()">
+                    <i class="fa-solid fa-shuffle fa-xl"></i>
+                </button>
+            </div>
+            <!--Color Box 2 Ends  -->
+            <div class="color-box" id="color-box-3">
+                <input class="hexInput" type="text" id="hex-code-3" readonly>
+                <button class="toggleLockButton"  id="lockButton3" onclick="toggleLock3()">
+                    Unlock / Lock
+                </button>
+                <button class="randomizeButton" onclick="randomizeColor3()">
+                    <i class="fa-solid fa-shuffle fa-xl"></i>
+                </button>
+            </div>
+            <!--Color Box 3 Ends  -->
+        </div>
+    <!-- Color Randomizer End -->
+    <!-- Entry Field -->
+        <div class="control-main">
+            <div class="control-panel" id="controlPanel">
+                <h2 class="mainTitle">Control Field</h2>
+                <input type="text" id="titleArea" placeholder="Enter your title..." class="titleArea">
+                <textarea id="textArea" placeholder="Enter your text..." class="textArea"></textarea>
+                <button class="groupAdd" id="groupAdd">
+                    <i class="fa-solid fa-floppy-disk fa-2xl"></i>
+                </button>
+                <div class="rules">
+                    <h2 class="rulesTitle"><span style='font-size: 30px;'>&#128680;</span> Rules <span style='font-size: 30px;'>&#128680;</span></h2>
+                        <p class="rules-text">You can only enter 2 max project Ideas and titles for now until I find a better way to initiate the necessary process. Keep In mind that this is to help you track what ideas you have in mind, help you build off those ideas without letting them get forgotten.
+                    </p>
                 </div>
             </div>
+        </div>
+    <!-- Entry Field Ends -->
+    <!-- Reciever Field -->
+        <div class="reciever-main" id="recieverMain">
+                <h2 class="recieverTitle">Reciever Panel</h2>
+                <button id="deleteAllButton" class="deleteAllButton"><i class="fa-solid fa-trash fa-xl"></i></button>
+            <div class="reciever-panel" id="recieverPanel" scrollable></div>
+            </div>
+    <!-- Reciever Field Ends -->
+    <!-- Main Container Ends -->
+        </div>
+
 <!-- Main Closes -->
 </main>
 <!-- Footer -->
@@ -50,17 +113,7 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
 <script src="js/app.js">
 </script>
 </body>
